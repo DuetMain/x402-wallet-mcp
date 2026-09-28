@@ -228,6 +228,8 @@ Then call it with a JSON body:
 
 At the time this example was added, the service advertised a price of $0.005 USDC per successful call. Always trust the live 402 payment requirements over documentation, and keep your configured spending limits in place.
 
+This service requires x402 v2 exact payments in the `PAYMENT-SIGNATURE` header. The v2 signing and retry path is covered by mocked tests in this PR; no live paid call has been made for this example. Check the live discovery document and 402 response before integrating it into a CSV import.
+
 > This is a third-party interoperability example and is not maintained or endorsed by x402-wallet-mcp.
 
 ## Spending Controls
