@@ -193,7 +193,7 @@ The tool returns:
 Services that publish a `/.well-known/x402` document can be added without changing the wallet package. For example, this third-party CSV preflight service publishes a compatible discovery document:
 
 ```
-You: "Add https://duet-csv-preflight.projectlantern-review.workers.dev as an endpoint source"
+You: "Add https://duet-csv-preflight.timbeaux-sora.chatgpt.site as an endpoint source"
 Claude: Using add_endpoint_source...
         ✓ Source added
         ✓ Found POST /v1/preflight
@@ -203,7 +203,7 @@ Probe the endpoint before paying:
 
 ```json
 {
-  "url": "https://duet-csv-preflight.projectlantern-review.workers.dev/v1/preflight",
+  "url": "https://duet-csv-preflight.timbeaux-sora.chatgpt.site/v1/preflight",
   "method": "POST"
 }
 ```
@@ -220,7 +220,7 @@ Then call it with a JSON body:
 
 ```json
 {
-  "url": "https://duet-csv-preflight.projectlantern-review.workers.dev/v1/preflight",
+  "url": "https://duet-csv-preflight.timbeaux-sora.chatgpt.site/v1/preflight",
   "method": "POST",
   "body": "{\"csv\":\"id,name\\n1,Alice\\n\",\"requiredFields\":[\"id\"],\"keyField\":\"id\"}"
 }
